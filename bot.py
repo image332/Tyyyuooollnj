@@ -343,7 +343,7 @@ def get_welcome_text(user):
     name = escape_markdown(user.first_name or "there")
     role = "👑 Owner" if is_owner(uid) else "✅ Approved User"
     return (
-        f"⚡️ *AKATSUKI BOT HOST*\n"
+        f"⚡️ *PYTHON HOSTING BOT V2*\n"
         f"_Your personal server, right inside Telegram_\n"
         f"{DIV}\n\n"
         f"👋 Hey *{name}*, welcome!\n\n"
@@ -372,7 +372,7 @@ def send_welcome(chat_id, user):
 def get_locked_text(user, joined):
     name = escape_markdown(user.first_name or "there")
     head = (
-        f"⚡️ *AKATSUKI BOT HOST*\n"
+        f"⚡️ *PYTHON HOSTING BOT V2*\n"
         f"_Your personal server, right inside Telegram_\n"
         f"{DIV}\n\n"
         f"👋 Hey *{name}*, welcome!\n\n"
@@ -406,7 +406,7 @@ def get_dashboard_text():
 def get_help_text(user_id=None):
     count = len(bot_config.get("required_channels", []))
     text = (
-        f"⚡️ *AKATSUKI BOT HOST — COMMAND GUIDE*\n"
+        f"⚡️ *PYTHON HOSTING BOT V2 — COMMAND GUIDE*\n"
         f"{DIV}\n\n"
         f"💻 *Terminal*\n"
         f"• Just type a command — `ls`, `git status`\n"
@@ -2335,7 +2335,7 @@ WEBHOOK_SECRET = __import__("hashlib").sha256(BOT_TOKEN.encode()).hexdigest()[:3
 
 @app.get("/")
 def home():
-    return "AKATSUKI BOT HOST is online.", 200
+    return "PYTHON HOSTING BOT V2 is online.", 200
 
 @app.get("/health")
 def health():
