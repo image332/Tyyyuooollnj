@@ -1,0 +1,29 @@
+{
+  "name": "Rbrbbtbtb Telegram Bot",
+  "description": "Telegram bot running on Heroku",
+  "repository": "https://github.com/key-generating-successful/Rbrbbtbtb",
+  "keywords": [
+    "telegram",
+    "telegram-bot",
+    "python"
+  ],
+  "env": {
+    "BOT_TOKEN": {
+      "description": "Telegram Bot Token",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Telegram Owner/User ID",
+      "required": true
+    },
+    "OWNER_ID_2": {
+      "description": "Second Telegram Owner/User ID",
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  }
+}
